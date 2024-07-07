@@ -12,6 +12,8 @@ import { useState } from "react";
 import axios from "axios";
 
 const EditProfile = ({ handleLogin, close, setHandleLogin }) => {
+  const userId = JSON.parse(localStorage.getItem("user"));
+
   const form = useForm({
     mode: "uncontrolled",
     initialValues: {
@@ -29,7 +31,7 @@ const EditProfile = ({ handleLogin, close, setHandleLogin }) => {
   });
 
   const [value, setValue] = useState("");
-  const url = `https://new-crud-ly68.onrender.com/api/v1/users/${handleLogin?.id}`;
+  const url = `https://new-crud-ly68.onrender.com/api/v1/users/${userId.id}`;
   const token = localStorage.getItem("token");
   const auth = {
     headers: {
