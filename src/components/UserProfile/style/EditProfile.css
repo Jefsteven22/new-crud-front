@@ -1,0 +1,12 @@
+.editProfile__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.editProfile__container-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

@@ -1,0 +1,71 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__container {
+  background-color: rgb(224, 225, 225);
+  width: 22rem;
+  height: 19rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(92, 92, 92, 0.522);
+}
+.login__title {
+  margin-bottom: 1rem;
+}
+.login__item {
+  width: 18rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.login__item > input {
+  padding: 0.1rem 0.5rem;
+}
+.login__error {
+  font-size: 0.8rem;
+  color: red;
+}
+.login__btn {
+  padding: 0.1rem 0.4rem;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  margin-top: 1rem;
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+.login__btn:hover {
+  opacity: 1;
+}
+.login__footer {
+  list-style: none;
+  color: rgb(91, 91, 91);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.login__footer > li {
+  margin: 0.3rem 0;
+}
+.login__footer > li .link {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(91, 91, 91);
+}
+.login__footer > li .link:hover {
+  color: black;
+}
